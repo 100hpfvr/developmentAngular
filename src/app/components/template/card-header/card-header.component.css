@@ -1,0 +1,22 @@
+.card {
+  
+  height: 30px;
+  background-color: #fcfcfc;
+  padding-left: 100px;
+  padding-right: 150px;
+  padding-bottom: 20px;
+
+  display:flex;
+  justify-content: space-between;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.div{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  vertical-align:middle;
+  
+  }

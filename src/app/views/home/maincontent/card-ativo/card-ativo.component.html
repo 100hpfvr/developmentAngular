@@ -1,0 +1,4 @@
+  <input #status type="button" (click)="mudaEstado(status.value)" [value]="estado"
+  [class.inativo]="estado === 'Inativo'"  [class.ativo]="estado !== 'Inativo'"
+  
+  >

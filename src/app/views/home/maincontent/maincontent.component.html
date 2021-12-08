@@ -1,2 +1,23 @@
 <app-card-header></app-card-header>
-<app-card-tile></app-card-tile>
+<app-card-tile *ngFor="let itemNomeDominios of nomeDominios; let i = index">
+  <div class="listitem">
+    
+    
+    <input
+      #nomeDominio
+      type="button"
+      class="h3"
+      (click)=""
+      routerLink="aplicativos"
+      value="{{ itemNomeDominios }}"
+    />
+    
+    
+    
+    <a routerLink="aplicativos"
+      ><h2 class="h3">{{ itemNomeDominios }}</h2></a
+    >
+
+    <app-card-ativo></app-card-ativo>
+  </div>
+</app-card-tile>

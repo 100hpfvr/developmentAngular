@@ -1,22 +1,15 @@
-import { Component } from '@angular/core';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition,
-  // ...
-} from '@angular/animations';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
  templateUrl: 'app.component.html',
- animations: [
-
-
- ]
  
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   nome = 'Maria';
+
+  ngOnInit() {
+
+  }
 }

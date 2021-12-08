@@ -39,10 +39,7 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
-
-
-
-
+import { CardAtivoComponent } from './views/home/maincontent/card-ativo/card-ativo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +52,7 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
     CardHeaderComponent,
     TitleSectionComponent,
     AplicativosComponent,
+    CardAtivoComponent
   ],
   imports: [
     MdbModalModule,
@@ -83,7 +81,7 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
     MdbTooltipModule,
     MdbValidationModule
   ],
-  providers: [],
+  providers: [TitleSectionComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

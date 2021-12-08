@@ -5,6 +5,13 @@ display:flex;
 justify-content: space-between;
 }
 
+.minimo{
+    height: 2px;
+    width: 2px;
+
+
+  }
+
 .div{
 display: flex;
 justify-content:flex-end;

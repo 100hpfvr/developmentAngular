@@ -7,9 +7,10 @@ import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
   styleUrls: ['./title-section.component.css']
 })
 export class TitleSectionComponent implements OnInit {
+  telaAtual: String = ""
 
   modalRef: MdbModalRef<ModalComponent> | undefined;
-  constructor(private modalService: MdbModalService) { }
+  constructor(private modalService: MdbModalService, private telaAtual: String) { }
 
   ngOnInit(): void {
   }

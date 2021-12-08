@@ -1,6 +1,16 @@
 <div class="div">
   <div class="div">
-    <h1>Estagio</h1>
+    <h1 class="spacinho" *ngIf=" telaAtual != ''; else elseBlock"> {{telaAtual}}   </h1>
+    <ng-template #elseBlock> <h1 class="spacinho">Domínios</h1></ng-template>
+     
+    <form class="col-12 col-lg-auto mb-1 mb-lg-0 me-lg-3">
+      <input
+        type="search"
+        class="form-control"
+        placeholder="Buscar Domínios..."
+        aria-label="Search"
+      />
+    </form>
     
   </div>
   <button class="btn" (click)="openModal()">Novo Domínio</button>

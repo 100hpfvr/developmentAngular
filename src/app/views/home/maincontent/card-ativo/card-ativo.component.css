@@ -1,0 +1,27 @@
+
+.ativo {
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #c5edee;
+    color: #2ac8c5;
+    font-weight: bold;
+    border-width: 0px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .inativo {
+    border-radius: 50px;
+    padding-left: 43px;
+    padding-right: 43px;
+    background-color: #eec5c5;
+    color: #dd5b5b;
+    font-weight: bold;
+    border-width: 0px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  

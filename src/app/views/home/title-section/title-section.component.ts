@@ -19,7 +19,8 @@ export class TitleSectionComponent implements OnInit {
     this.modalRef = this.modalService.open(ModalComponent)
   }
 
-  vazia() {
+  teste() {
+  
     
   }
 

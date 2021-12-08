@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { TitleSectionComponent } from "../title-section/title-section.component";
-
 @Component({
   selector: "app-maincontent",
   templateUrl: "./maincontent.component.html",
@@ -13,7 +12,13 @@ export class MaincontentComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  entraNoDominio() {}
+  entraNoDominio() {
+   
+   
+
+  }
+
+  
 
   nomeDominios: String[] = [
     "Consultoria_DEMO",

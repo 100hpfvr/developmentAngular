@@ -19,22 +19,8 @@ export class HomeComponent implements OnInit {
     (new Main()).main();
   }
 
-  chamada() {
-    let resposta =  this.http.get("https://personal-pdge9bfc.outsystemscloud.com/LocadoraDeVeiculo/rest/v1/clientes?pagina=0&qntItems=0"); //chamada da api
-    
-    // Create observer object
-    let myObserver = {
-      next: (x: Object) => console.log(x),
-      error: (err: Error) => console.error('Observer got an error: ' + err),
-      complete: () => {console.log('Observer got a complete notification')},
-  };
-
-    let ob = resposta.subscribe(myObserver);
-  }
-
-  resposta(){
 
 
-  }
+
 
 }

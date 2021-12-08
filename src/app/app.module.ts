@@ -81,7 +81,7 @@ import { CardAtivoComponent } from './views/home/maincontent/card-ativo/card-ati
     MdbTooltipModule,
     MdbValidationModule
   ],
-  providers: [TitleSectionComponent],
+  providers: [MaincontentComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

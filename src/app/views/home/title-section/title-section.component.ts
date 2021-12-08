@@ -10,7 +10,13 @@ export class TitleSectionComponent implements OnInit {
   telaAtual: String = ""
 
   modalRef: MdbModalRef<ModalComponent> | undefined;
-  constructor(private modalService: MdbModalService, private telaAtual: String) { }
+  constructor(private modalService: MdbModalService, private itemNomeDominio: String) {
+    if(itemNomeDominio == null){
+      itemNomeDominio = "Dominios"
+
+    }
+
+   }
 
   ngOnInit(): void {
   }

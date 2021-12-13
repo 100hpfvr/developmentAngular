@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { MdbModalService } from "mdb-angular-ui-kit/modal";
+import { ModalComponent } from "src/app/components/template/modal/modal.component";
 
 @Component({
   selector: "app-card-ativo",
@@ -6,8 +8,9 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./card-ativo.component.css"],
 })
 export class CardAtivoComponent implements OnInit {
+  modalRef: any;
   
-  constructor() {
+  constructor(private modalService: MdbModalService) {
   }
   
  estado: String = "Ativo"  
@@ -17,6 +20,10 @@ export class CardAtivoComponent implements OnInit {
   /**
    * name
    */
+  confirmacaoModal(estado: String){
+  
+  this.modalRef = this.modalService.open(ModalComponent)
+  }
    mudaEstado(estado: string) {
     if (estado == "Ativo") {
       this.estado = "Inativo";

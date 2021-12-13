@@ -1,3 +1,4 @@
+import { HomeService } from './views/home/home.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
@@ -21,7 +22,6 @@ import { HomeComponent } from "./views/home/home.component";
 import { MaincontentComponent } from './views/home/maincontent/maincontent.component';
 import { CardTileComponent } from './components/template/card-tile/card-tile.component';
 import { CardHeaderComponent } from './components/template/card-header/card-header.component';
-import { TitleSectionComponent } from './views/home/title-section/title-section.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { AplicativosComponent } from './views/home/aplicativos/aplicativos.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -50,7 +50,6 @@ import { CardAtivoComponent } from './views/home/maincontent/card-ativo/card-ati
     MaincontentComponent,
     CardTileComponent,
     CardHeaderComponent,
-    TitleSectionComponent,
     AplicativosComponent,
     CardAtivoComponent
   ],
@@ -81,7 +80,7 @@ import { CardAtivoComponent } from './views/home/maincontent/card-ativo/card-ati
     MdbTooltipModule,
     MdbValidationModule
   ],
-  providers: [MaincontentComponent],
+  providers: [HomeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -1,3 +1,22 @@
+<div class="div">
+  <div class="div">
+    <h1 class="spacinho">   </h1>
+     
+    <form class="col-12 col-lg-auto mb-1 mb-lg-0 me-lg-3">
+      <input
+        type="search"
+        class="form-control"
+        placeholder="Buscar Domínios..."
+        aria-label="Search"
+      />
+    </form>
+    
+  </div>
+  <button class="btn" (click)="openModal()">Novo Domínio</button>
+
+</div>
+
+
 <app-card-header></app-card-header>
 <app-card-tile *ngFor="let itemNomeDominios of nomeDominios; let i = index">
   <div class="listitem">
@@ -7,16 +26,12 @@
       #nomeDominio
       type="button"
       class="h3"
-     
+     (click)="GotoAppByService(itemNomeDominios)"
       routerLink="aplicativos"
       value="{{ itemNomeDominios }}"
     />
     
     
-    
-    <a routerLink="aplicativos"
-      ><h2 class="h3">{{ itemNomeDominios }}</h2></a
-    >
 
     <app-card-ativo></app-card-ativo>
   </div>

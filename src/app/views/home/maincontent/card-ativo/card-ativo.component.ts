@@ -1,7 +1,6 @@
+import { ModalConfirmacaoComponent } from './modal-confirmacao/modal-confirmacao.component';
 import { Component, OnInit } from "@angular/core";
 import { MdbModalService } from "mdb-angular-ui-kit/modal";
-import { ModalComponent } from "src/app/components/template/modal/modal.component";
-
 @Component({
   selector: "app-card-ativo",
   templateUrl: "./card-ativo.component.html",
@@ -22,7 +21,7 @@ export class CardAtivoComponent implements OnInit {
    */
   confirmacaoModal(estado: String){
   
-  this.modalRef = this.modalService.open(ModalComponent)
+  this.modalRef = this.modalService.open(ModalConfirmacaoComponent)
   }
   mudaEstado(estado: string)
   {

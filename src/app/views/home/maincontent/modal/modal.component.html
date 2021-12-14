@@ -1,0 +1,27 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="modalRef.close()"
+  ></button>
+</div>
+<div class="modal-body">
+  <form>
+    <div class="form-group">
+      <label for="namedomain">Nome do Domínio</label>
+      <div class="input-group">
+        <input id="namedomain" class="form-control" placeholder="Estágio" name="dp" ngbDatepicker #dp="">
+       
+      </div>
+    </div>
+  </form>
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
+    Cancelar
+  </button>
+  <button type="button" class="btn btn-primary">Criar Tenant </button>
+</div>

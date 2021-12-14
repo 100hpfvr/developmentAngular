@@ -24,8 +24,9 @@ export class CardAtivoComponent implements OnInit {
   
   this.modalRef = this.modalService.open(ModalComponent)
   }
-   mudaEstado(estado: string) {
-    if (estado == "Ativo") {
+  mudaEstado(estado: string)
+  {
+     if (estado == "Ativo") {
       this.estado = "Inativo";
       return this.estado;
     } else {

@@ -1,38 +1,31 @@
 import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: "root",
+	providedIn: "root",
 })
 export class HomeService {
-  constructor() {}
-  nomeDominio: String = "";
+	constructor() {}
+	nomeDominio: String = "";
 
-  setAplicativo(event: String){
-    
-    this.nomeDominio = event
-    
-    
-  }
+	setAplicativo(event: String) {
+		this.nomeDominio = event;
+	}
 
-  getAplicativo(){
+	getAplicativo() {
+		return this.nomeDominio;
+	}
 
-    return this.nomeDominio
-  
-
-
-  }
-
-
-  getDominios() {
-    return [
-      "Consultoria_DEMO",
-      "Estagio",
-      "simula_prd",
-      "Sispro",
-      "Sispro2",
-      "Sispro3",
-      "Videos",
-      "tesjoadpsjnioafbheio",
-    ];
-  }
+	getDominios()
+			{
+				return [
+					"Consultoria_DEMO",
+					"Estagio",
+					"simula_prd",
+					"Sispro",
+					"Sispro2",
+					"Sispro3",
+					"Videos",
+					"tesjoadpsjnioafbheio",
+				];
+			}
 }

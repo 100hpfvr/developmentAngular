@@ -5,36 +5,32 @@ import { Router, RouterLink } from "@angular/router";
 import { MdbModalService } from "mdb-angular-ui-kit/modal";
 import { ModalComponent } from "src/app/components/template/modal/modal.component";
 @Component({
-  selector: "app-maincontent",
-  templateUrl: "./maincontent.component.html",
-  styleUrls: ["./maincontent.component.css"],
+	selector: "app-maincontent",
+	templateUrl: "./maincontent.component.html",
+	styleUrls: ["./maincontent.component.css"],
 })
 export class MaincontentComponent implements OnInit {
-  modalRef: any;
-  constructor(
-    private modalService: MdbModalService,
-    public homeService: HomeService,
-    private router: Router
-  ) {
-    this.nomeDominios = this.homeService.getDominios();
-  }
+	modalRef: any;
+	constructor(
+		private modalService: MdbModalService,
+		public homeService: HomeService,
+		private router: Router
+	) {
+		this.nomeDominios = this.homeService.getDominios();
+	}
 
-  openModal() {
-    this.modalRef = this.modalService.open(ModalComponent);
-  }
+	openModal() {
+		this.modalRef = this.modalService.open(ModalComponent);
+	}
 
+	GotoAppByService(event: String) {
+		this.homeService.setAplicativo(event);
+		this.router.navigateByUrl("aplicativos");
+	}
 
+	ngOnInit(): void {}
 
-  GotoAppByService(event: String) {
-    this.homeService.setAplicativo(event);
-    this.router.navigateByUrl('aplicativos')
+	instanciaHomeService = new HomeService(); // Instanciando o home service
 
-
-  }
-
-  ngOnInit(): void {}
-
-  instanciaHomeService = new HomeService(); // Instanciando o home service
-
-  nomeDominios: String[] = [];
+	nomeDominios: String[] = [];
 }

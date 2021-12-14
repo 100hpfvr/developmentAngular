@@ -1,3 +1,4 @@
+import { CardAtivoComponent } from './../maincontent/card-ativo/card-ativo.component';
 import { ModalConfirmacaoComponent } from "./../maincontent/card-ativo/modal-confirmacao/modal-confirmacao.component";
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
@@ -7,7 +8,8 @@ import { HomeService } from "../home.service";
 @Component({
 	selector: "app-aplicativos",
 	templateUrl: "./aplicativos.component.html",
-	styleUrls: ["./aplicativos.component.css"],
+  styleUrls: ["./aplicativos.component.css"],
+  providers: []
 })
 export class AplicativosComponent implements OnInit {
 	modalRef: any;

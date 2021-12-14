@@ -21,7 +21,7 @@ export class CardAtivoComponent implements OnInit {
    */
   confirmacaoModal(estado: String){
   
-  this.modalRef = this.modalService.open(ModalConfirmacaoComponent)
+  this.modalRef = this.modalService.open(ModalConfirmacaoComponent, )
   }
   mudaEstado(estado: string)
   {

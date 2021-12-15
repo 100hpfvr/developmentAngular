@@ -8,12 +8,12 @@
         ></button>
       </div>
       <div class="modal-body">
-       <h1>{{message}}</h1>
+       <h1>Deseja Trocar o estado atual Domínio? Estado Atual: {{message}}</h1>
       
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
           Cancelar
         </button>
-        <button type="button" class="btn btn-primary">Confirmar </button>
+        <button type="button" class="btn btn-primary" (click)="modalRef.close( )" >Confirmar </button>
       </div>

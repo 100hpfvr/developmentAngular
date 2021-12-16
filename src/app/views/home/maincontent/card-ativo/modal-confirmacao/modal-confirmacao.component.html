@@ -1,19 +1,31 @@
 <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">ATENÇÃO </h5>
-        <button
-          type="button"
-          class="btn-close"
-          aria-label="Close"
-          (click)="modalRef.close()"
-        ></button>
-      </div>
-      <div class="modal-body">
-       <h1>Deseja Trocar o estado atual Domínio? Estado Atual: {{message}}</h1>
-      
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
-          Cancelar
-        </button>
-        <button type="button" class="btn btn-primary" (click)="modalRef.close( )" >Confirmar </button>
-      </div>
+	<h5 class="modal-title" id="exampleModalLabel">ATENÇÃO</h5>
+	<button
+		type="button"
+		class="btn-close"
+		aria-label="Close"
+		(click)="modalRef.close()"
+	></button>
+</div>
+<div class="modal-body">
+	<h1>
+		Deseja Trocar o estado atual Domínio? Estado Atual:
+		{{ message }}
+	</h1>
+</div>
+<div class="modal-footer">
+	<button
+		type="button"
+		class="btn btn-secondary"
+		(click)="modalRef.close()"
+	>
+		Cancelar
+	</button>
+	<button
+		type="button"
+		class="btn btn-primary"
+		(click)="mudaEstado(message)"
+	>
+		Confirmar
+	</button>
+</div>

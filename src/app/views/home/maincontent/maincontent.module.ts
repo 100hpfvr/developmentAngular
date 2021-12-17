@@ -1,18 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HomeService } from '../home.service';
-import { ModalConfirmacaoComponent } from './card-ativo/modal-confirmacao/modal-confirmacao.component';
-
-
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { HomeService } from "../home.service";
 
 @NgModule({
-  declarations: [
-    ModalConfirmacaoComponent
-  ],
-  imports: [
-    CommonModule
-  ],
-  providers: [HomeService]
-  
+	declarations: [],
+	imports: [CommonModule],
+	providers: [HomeService],
 })
-export class MaincontentModule { }
+export class MaincontentModule {}

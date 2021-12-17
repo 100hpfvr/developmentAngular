@@ -1,4 +1,16 @@
-  <input  #status type="button" (click)="confirmacaoModal(status.value)" [value]="estado"
-  [class.inativo]="estado === 'Inativo'"  [class.ativo]="estado !== 'Inativo'"
-  
-  >
+<input
+	#status
+	type="button"
+	(click)="abrirModaldeConfirmacao(estado)"
+	[value]="estado"
+	[class.inativo]="estado === 'Inativo'"
+	[class.ativo]="estado !== 'Inativo'"
+/>
+
+<ng-template #changeModal>
+	<div class="modal-body text-center">
+		<p>Do you want to confirm?</p>
+		<button type="button" class="btn btn-default" (click)="confirmarTroca(estado)">Sim</button>
+		<button type="button" class="btn btn-primary" (click)="declinarTroca()">Não</button>
+	</div>
+</ng-template>

@@ -15,12 +15,15 @@ import { MatCardModule } from "@angular/material/card";
 import { MatListModule } from "@angular/material/list";
 import { HomeComponent } from "./views/home/home.component";
 import { MaincontentComponent } from "./views/home/maincontent/maincontent.component";
+
 import { CardTileComponent } from "./components/template/card-tile/card-tile.component";
 import { CardHeaderComponent } from "./components/template/card-header/card-header.component";
 import { AplicativosComponent } from "./views/home/aplicativos/aplicativos.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { CardAtivoComponent } from "./views/home/maincontent/card-ativo/card-ativo.component";
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { AccordionComponent } from './views/home/aplicativos/accordion/accordion.component';
+import { AccordionModule } from "ngx-bootstrap/accordion";
 
 @NgModule({
 	declarations: [
@@ -32,8 +35,11 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 		CardHeaderComponent,
 		AplicativosComponent,
 		CardAtivoComponent,
+  AccordionComponent,
 	],
 	imports: [
+		BrowserAnimationsModule,
+		AccordionModule,
 		HttpClientModule,
 		BrowserModule,
 		MatCardModule,

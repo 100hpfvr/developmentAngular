@@ -1,0 +1,9 @@
+:host >>> .panel > .panel-heading {
+	background-color: white;
+      
+}
+:host >>> .panel {
+	background-color: rgb(248, 245, 245);
+      border-radius: 5px;
+     
+}

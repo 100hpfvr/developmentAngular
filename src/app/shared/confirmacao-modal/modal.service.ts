@@ -7,15 +7,16 @@ import { Injectable } from "@angular/core";
 })
 export class ModalService {
 	modalService: any;
-	constructor(bsModalService: BsModalService) {}
-	showConfirm(
+
+	constructor(modalService: BsModalService) {}
+
+
+	showConfirm (
 		bodyText: string,
-		confirmButtonText: string,
-		cancelarButtonText: string
+		confirmButtonText?: string,
+		cancelarButtonText?: string
 	) {
-		const bsModalRef: BsModalRef = this.modalService.show(
-			ConfirmacaoModalComponent
-		);
+		const bsModalRef: BsModalRef = this.modalService(ConfirmacaoModalComponent)
 		bsModalRef.content.bodyText = bodyText;
 		bsModalRef.content.confirmButtonText = confirmButtonText;
 
@@ -27,5 +28,6 @@ export class ModalService {
 			bsModalRef.content.cancelarButtonText =
 				cancelarButtonText;
 		}
+		
 	}
 }

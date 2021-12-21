@@ -1,3 +1,4 @@
+import { ModalService } from './shared/confirmacao-modal/modal.service';
 import { HeaderTitlService } from "./components/template/header/header-titl.service";
 import { HomeService } from "./views/home/home.service";
 import { HttpClientModule } from "@angular/common/http";
@@ -48,9 +49,9 @@ import { AccordionModule } from "ngx-bootstrap/accordion";
 		MatToolbarModule,
 		MatListModule,
 		NgbModule,
-  ModalModule.forRoot(),
+ 		ModalModule.forRoot(),
 	],
-	providers: [HomeService, HeaderTitlService],
+	providers: [HomeService, HeaderTitlService, ModalService],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -7,9 +7,9 @@ import { Component, Input, OnInit } from "@angular/core";
 	styleUrls: ["./confirmacao-modal.component.css"],
 })
 export class ConfirmacaoModalComponent implements OnInit {
-	@Input() bodyText!: string;
-	@Input() confirmButtonText: string = "Sim";
-	@Input() cancelarButtonText: string = "cancelar";
+	@Input() bodyText = "default";
+	@Input() confirmButtonText = "Sim";
+	@Input() cancelarButtonText = "cancelar";
 	constructor(public bsModalRef: BsModalRef) {}
 
 	ngOnInit(): void {}

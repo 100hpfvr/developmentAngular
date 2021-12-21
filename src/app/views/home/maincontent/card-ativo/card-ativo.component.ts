@@ -13,8 +13,8 @@ export class CardAtivoComponent implements OnInit {
 	changeModalRef?: BsModalRef; // Referência do modal de mudar estado
 	@ViewChild("changeModal", { static: true }) changeModal: any;
 	constructor(
-		private modalService: BsModalService,
-		public modal: ModalService
+		private modalService: ModalService,
+		
 	) {}
 
 	abrirModaldeConfirmacao(estado: string) {
@@ -23,7 +23,7 @@ export class CardAtivoComponent implements OnInit {
 			class: "modal-sm",
 		} );*/
 
-		this.modal.showConfirm(
+		this.modalService.showConfirm(
 			"Tem Certeza que quer trocar o estado?",
 			"ok",
 			"não"
